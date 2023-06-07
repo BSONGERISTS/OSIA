@@ -1,190 +1,186 @@
 <html>
-  <title>OSIA:Organized System Information Assistant</title>
-    <body style="background-color: 00730C;">
-        
-            <div style="width: 1450px; 
-            height: 675px; 
-            background-color: DBEDB9;
-            position: absolute; 
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);">
-            
-            <div style="width: 425px;
-            height: 425px;
-            border-radius: 50%;
-            background-color:00730C;
-            position: absolute;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);"></div>
-               
-                <button class= "Login button" type="submit" 
-                style= "background-color: #DBEDB9;
-                color: black;
-                border: none;
-                padding: 10px 20px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 15px;
-                cursor: pointer;
-                border-radius: 5px;
-                transition: background-color 0.3s ease;
-                position: absolute;
-                width: 175px;
-                height: 45px;
-                left: 635px;
-                top: 445px;"><b>LOGIN</b>
-                </button>
-                <style>
-                  .Login button:hover {
-                    background-color: #45a049;
-                  }</style>
-
-                
-                  <div style="width: 425px;
-                  height: 425px;
-                  background: url(Lock.png);
-                  background-repeat: no-repeat;
-                  border-radius: 50%;
-                  background-color: rgba(115,173,121,255);
-                  border-radius: 10px;
-                  border: 8px;
-                  position: absolute;
-                  position: absolute;
-                  width: 310px;
-                  height: 63px;
-                  left: 725px;
-                  top: 393px;
-                  transform: translate(-50%, -50%);"></div>
-
-                  <input type="password" name="myInput" placeholder="Password" id="passwordInput" class="my-input" maxlength="50">
-                  
-                  <style>.my-input {
-                      outline: none;
-                      background-repeat: no-repeat;
-                      background-color: rgba(115,173,121,255);
-                      font-weight: 600;
-                      font-size: 20px;
-                      line-height: 24px;
-                      text-align: left;
-                      color: rgba(255, 255, 255, 0.829);
-                      border-radius: 10px;
-                      border: 8px;
-                      font-size: 15px;
-                      position: absolute;
-                      width: 200px;
-                      height: 50px;
-                      left: 630px;
-                      top: 368px;
-                      position: absolute;
-                  }
-                  .my-input::placeholder{
-                    color:#a1c4a5;
-                  }
-                  </style>
-
-              <button onclick="button2()" name="submit-button"
-              style = "background-image: url('Eye.png');
-              background-repeat: no-repeat;
-              background-color: #a1c4a5;
-              color: black;
-              border: none;
-              padding: 10px 20px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              font-size: 15px;
-              cursor: pointer;
-              border-radius: 5px;
-              transition: background-color 0.3s ease;
-              position: absolute;
-              width: 40px;
-              height: 40px;
-              left: 828px;
-              top: 370px;"></button>
-
-              <script>
-                function button2() {
-                  var passwordInput = document.getElementById("passwordInput");
-                  if (passwordInput.type === "password") {
-                    passwordInput.type = "text";
-                  } else {
-                    passwordInput.type = "password";
-                  }
-                }
-              </script> 
-
-                <div style="width: 425px;
-                height: 425px;
-                background: url(User.png);
-                background-repeat: no-repeat;
-                border-radius: 50%;
-                background-color: rgba(115,173,121,255);
-                border-radius: 10px;
-                border: 8px;
-                position: absolute;
-                position: absolute;
-                width: 310px;
-                height: 63px;
-                left: 725px;
-                top: 306px;
-                transform: translate(-50%, -50%);"></div>
-
-                <input type="text" name="Input" placeholder="Username" class="mi-input" maxlength="50">
-                <style>.mi-input {
-                  outline: none;
-                  background-repeat: no-repeat;
-                  background-color: rgba(115,173,121,255);
-                  font-weight: 600;
-                  font-size: 20px;
-                  line-height: 24px;
-                  text-align: left;
-                  color: rgba(255, 255, 255, 0.829);
-                  border-radius: 10px;
-                  border: 8px;
-                  font-size: 15px;
-                  position: absolute;
-                  width: 200px;
-                  height: 50px;
-                  left: 630px;
-                  top: 281px;
-                  position: absolute;
-                }
-                .mi-input::placeholder{
-                  color:#a1c4a5;
-                }
-                </style>
-
-                <div style = "position: absolute;
-                width: 320px;
-                height: 98px;
-                left: 200px;
-                top: 50px;
-                
-                background: url(Group\ 2.png);
-                background-blend-mode: lighten;
-                border-radius: 10px"></div>
-
-                <div style = "position: absolute;
-                width: 159px;
-                height: 77px;
-                left: 25px;
-                top: 50px;
-                
-                background: url(Logo.png);
-                background-blend-mode: lighten;
-                border-radius: 10px"></div>
-
-                <div style = "position: absolute;
-                width: 159px;
-                height: 77px;
-                left: 641px;
-                top: 168px;
-                
-                background: url(Logo.png);
-                background-blend-mode: lighten;
-                border-radius: 10px"></div>
-            </div>
-    </body>
+  <head>
+    <title>OSIA: Organized System Information Assistant</title>
+    <style>
+      body {
+        background-color: #00730C;
+      }
+      .container {
+        width: 1450px;
+        height: 675px;
+        background-color: #DBEDB9;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .circle {
+        width: 425px;
+        height: 425px;
+        border-radius: 50%;
+        background-color: #00730C;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .login-button {
+        background-color: #DBEDB9;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        width: 175px;
+        height: 45px;
+        left: 635px;
+        top: 445px;
+      }
+      .login-button:hover {
+        background-color: #c3e5c5;
+      }
+      .password-input {
+        position: absolute;
+        width: 310px;
+        height: 63px;
+        left: 50%;
+        top: 363px;
+        transform: translateX(-50%);
+        background: url(Lock.png) no-repeat;
+        background-color: rgba(115, 173, 121, 255);
+        border-radius: 10px;
+        border: 8px;
+      }
+      .password-input input {
+        outline: none;
+        background-repeat: no-repeat;
+        background-color: rgba(115, 173, 121, 255);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.829);
+        border-radius: 10px;
+        border: 8px;
+        font-size: 15px;
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .password-input input::placeholder {
+        color: #a1c4a5;
+      }
+      .show-password-button {
+        background-image: url('Eye.png');
+        background-repeat: no-repeat;
+        background-color: #a1c4a5;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: calc(50% + 103px);
+        top: 372px;
+      }
+      .username-input {
+        position: absolute;
+        width: 310px;
+        height: 63px;
+        left: 50%;
+        top: 276px;
+        transform: translateX(-50%);
+        background: url(User.png) no-repeat;
+        background-color: rgba(115, 173, 121, 255);
+        border-radius: 10px;
+        border: 8px;
+      }
+      .username-input input {
+        outline: none;
+        background-repeat: no-repeat;
+        background-color: rgba(115, 173, 121, 255);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.829);
+        border-radius: 10px;
+        border: 8px;
+        font-size: 15px;
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .username-input input::placeholder {
+        color: #a1c4a5;
+      }
+      .element {
+        position: absolute;
+        border-radius: 10px;
+        background-blend-mode: lighten;
+      }
+      .element1 {
+        width: 320px;
+        height: 98px;
+        left: 200px;
+        top: 50px;
+        background: url(Group\ 2.png);
+      }
+      .element2 {
+        width: 159px;
+        height: 77px;
+        left: 25px;
+        top: 50px;
+        background: url(Logo.png);
+      }
+      .element3 {
+        width: 159px;
+        height: 77px;
+        left: 641px;
+        top: 168px;
+        background: url(Logo.png);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+      <button class="login-button" type="submit"><b>LOGIN</b></button>
+      <div class="password-input">
+        <input type="password" name="myInput" placeholder="Password">
+      </div>
+      <button onclick="togglePassword()" class="show-password-button" name="submit-button"></button>
+      <div class="username-input">
+        <input type="text" name="Input" placeholder="Username" maxlength="50">
+      </div>
+      <div class="element element1"></div>
+      <div class="element element2"></div>
+      <div class="element element3"></div>
+    </div>
+    <script>
+      function togglePassword() {
+        var passwordInput = document.querySelector("input[name='myInput']");
+        passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+      }
+    </script>
+  </body>
 </html>
