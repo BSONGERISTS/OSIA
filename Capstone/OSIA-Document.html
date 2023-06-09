@@ -386,6 +386,7 @@
             background-color: #87c18b;
         }
         .profile{
+            cursor: pointer;
             width: 70px;
             height: 70px;
             border-radius: 50%;
@@ -436,13 +437,23 @@
             left: 1110px;
             top: 260px;
         }
-        
+        .e1 {
+        position: absolute;
+        border-radius: 10px;
+        background-blend-mode: lighten;
+        width: 320px;
+        height: 98px;
+        left: 100px;
+        top: -2px;
+        background: url(Group\ 2.png);
+        }
     </style>
 
     <!-- Display -->
     <body>
         <div class="container">
             <button class="profile" onclick="ToProfile()"></button>
+            <div class="e1"></div>
             <button class="Logout" onclick="ToLogin()"><b class="font">Logout</b></button>
             <button class="message" id="ms" onclick="Popout()"><b class="font">Message</b></button>
             <div class="preview"></div>
@@ -482,6 +493,9 @@
                 var popcontent = document.getElementById("popcontent");
                 popcontent.classList.toggle("hidden");
                 popcontent.classList.toggle("visible");
+                }
+                function ToProfile()    {
+                window.location.href = "OSIA-Profile.html";
                 }
             </script>
     </body>
