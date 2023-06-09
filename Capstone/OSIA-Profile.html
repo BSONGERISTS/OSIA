@@ -78,7 +78,7 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            border-radius: 2px;
+            border-radius: 5px;
             position: absolute;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             width: 339.5px;
@@ -95,7 +95,7 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
-            border-radius: 2px;
+            border-radius: 5px;
             position: absolute;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             width: 339.5px;
@@ -282,6 +282,7 @@
             height: 240px;
             border-radius: 50%;
             background-color: #D9D9D9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 5);
             position: absolute;
             border: none;
             top: 200;
@@ -414,6 +415,19 @@
             left: 380px;
             top: 330.5px;
         }
+        .scircle{
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #74D272;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            border: none;
+            top: 300px;
+            left: 270px;
+            transform: translate(-50%, -50%);
+        }
         </style>
                         <!--Display-->
         <body>
@@ -421,7 +435,8 @@
                 <button class="Logout" onclick="ToLogin()"><b class="font">Logout</b></button>
                 <button class="message" id="ms" onclick="Popout()"><b class="font">Message</b></button>
                 <div class="logcontainer">
-                    <button class="circle"></button>
+                    <div class="circle"></div>
+                    <button class="scircle"></button>
                     <div class="proftext"><b class="font">Profile</b></div>
                     <input class="name" placeholder="Name">
                     <input class="username" placeholder="Username">
