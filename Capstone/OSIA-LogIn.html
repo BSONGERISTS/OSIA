@@ -166,7 +166,7 @@
   <body>
     <div class="container">
       <div class="circle"></div>
-      <button class="login-button" type="submit"><b>LOGIN</b></button>
+      <button class="login-button" type="submit" onclick="ToDocu()"><b>LOGIN</b></button>
       <div class="password-input">
         <input type="password" name="myInput" placeholder="Password">
       </div>
@@ -183,6 +183,9 @@
       function togglePassword() {
         var passwordInput = document.querySelector("input[name='myInput']");
         passwordInput.type = passwordInput.type === "password" ? "text" : "password";
+      }
+      function ToDocu(){
+        window.location.href = "OSIA-Document.html";
       }
     </script>
   </body>
