@@ -25,7 +25,7 @@ else{
                 <div class="circle"></div>
                 <button class="scircle"></button>
                 <div class="proftext"><b class="font">Profile</b></div>
-                <input class="name" style="font-weight: bold" disabled value= <?= $username["name"] ?>>
+                <input class="name" style="font-weight: bold" disabled value= "<?= $username["name"] ?>">
                 <input class="username" style="font-weight: bold" value= <?= $username["user"] ?>>
                 <input class="Birth" style="font-weight: bold" value= <?= $username["dob"] ?>>
                 <input class="pass" style="font-weight: bold" value= <?= $username["password"] ?>>
