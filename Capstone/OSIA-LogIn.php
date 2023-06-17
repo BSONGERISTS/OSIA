@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     if($username){
         if ($_POST["password"] == $username["password"]){
             session_start();
-            $_SESSION["id"] = $username["password"];
+            $_SESSION["id"] = $username["id"];
             header("Location: OSIA-Document.php");
             exit;
         }
