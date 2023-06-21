@@ -26,10 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
   <body>
     <div class="container">
       
-    <?php if ($login): ?>
-        <em>Invalid login</em>
-      <?php endif; ?>
-
       <div class="circle">
 
       <div class="element element3"></div>
@@ -39,7 +35,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         </div>
         <div class="password-input">
           <input type="password" name="password" placeholder="Password" required value = <?= $_POST["password"] ?? ""?>>
-          <button type="button" onclick="togglePassword()" class="show-password-button" name="submit-button"></button>
+
+          <button type= "button" onclick="togglePassword()" class="show-password-button" name="submit-button"></button>
+            <?php if ($login): ?>
+            <b id="invalid">Incorrect Username or Password</b>
+            <?php endif; ?>
         </div>
         <button class="login-button" type="submit"><b>LOGIN</b></button>
       </form>
