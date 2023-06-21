@@ -26,26 +26,29 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
   <body>
     <div class="container">
       
-      <div class="circle"></div>
-      <div class="element element1"></div>
-      <div class="element element2"></div>
-      <div class="element element3"></div>
-
-      <?php if ($login): ?>
+    <?php if ($login): ?>
         <em>Invalid login</em>
       <?php endif; ?>
 
+      <div class="circle">
+
+      <div class="element element3"></div>
       <form method="post">
         <div class="username-input">
           <input type="text" name="username" placeholder="Username" maxlength="50" required value = <?= $_POST["username"] ?? ""?>>
         </div>
         <div class="password-input">
           <input type="password" name="password" placeholder="Password" required value = <?= $_POST["password"] ?? ""?>>
+
+          <button onclick="togglePassword()" class="show-password-button" name="submit-button"></button>
+
         </div>
         <button class="login-button" type="submit"><b>LOGIN</b></button>
       </form>
-      
-    <button onclick="togglePassword()" class="show-password-button" name="submit-button"></button>
+
+      </div>
+      <div class="element element1"></div>
+      <div class="element element2"></div>
 
     </div>
     
