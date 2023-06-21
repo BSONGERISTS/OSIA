@@ -39,9 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         </div>
         <div class="password-input">
           <input type="password" name="password" placeholder="Password" required value = <?= $_POST["password"] ?? ""?>>
-
-          <button onclick="togglePassword()" class="show-password-button" name="submit-button"></button>
-
+          <button type="button" onclick="togglePassword()" class="show-password-button" name="submit-button"></button>
         </div>
         <button class="login-button" type="submit"><b>LOGIN</b></button>
       </form>
