@@ -2,8 +2,8 @@ body {
 background-color: #00730C;
 }
 .container {
-width: 1450px;
-height: 675px;
+width: 95%;
+height: 90%;
 background-color: #DBEDB9;
 position: absolute;
 top: 50%;
@@ -35,8 +35,8 @@ transition: background-color 0.3s ease;
 position: absolute;
 width: 175px;
 height: 45px;
-left: 635px;
-top: 445px;
+left: 124px;
+top: 335px;
 }
 .login-button:hover {
 background-color: #87c18b;
@@ -46,7 +46,7 @@ position: absolute;
 width: 310px;
 height: 63px;
 left: 50%;
-top: 363px;
+top: 248px;
 transform: translateX(-50%);
 background: url(Lock.png) no-repeat;
 background-color: rgba(115, 173, 121, 255);
@@ -93,14 +93,14 @@ position: absolute;
 width: 40px;
 height: 40px;
 left: calc(50% + 103px);
-top: 372px;
+top: 10px;
 }
 .username-input {
 position: absolute;
 width: 310px;
 height: 63px;
 left: 50%;
-top: 276px;
+top: 162px;
 transform: translateX(-50%);
 background: url(User.png) no-repeat;
 background-color: rgba(115, 173, 121, 255);
@@ -139,19 +139,19 @@ width: 320px;
 height: 98px;
 left: 200px;
 top: 50px;
-background: url(Group\ 2.png);
+background: url(Group\ 2.png) no-repeat;
 }
 .element2 {
 width: 159px;
 height: 77px;
 left: 25px;
 top: 50px;
-background: url(Logo.png);
+background: url(Logo.png) no-repeat;
 }
 .element3 {
 width: 159px;
 height: 77px;
-left: 641px;
-top: 168px;
+left: 133px;
+top: 50px;
 background: url(Logo.png);
 }
