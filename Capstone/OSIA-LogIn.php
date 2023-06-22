@@ -26,6 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
   <body>
     <div class="container">
       
+    <div class="element element1"></div>
+    <div class="element element2"></div>
       <div class="circle">
 
       <div class="element element3"></div>
@@ -45,8 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
       </form>
 
       </div>
-      <div class="element element1"></div>
-      <div class="element element2"></div>
 
     </div>
     
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         passwordInput.type = passwordInput.type === "password" ? "text" : "password";
       }
       function ToDocu(){
-        window.location.href = "OSIA-Document.html";
+        window.location.href = "OSIA-Document.php";
       }
     </script>
   </body>
