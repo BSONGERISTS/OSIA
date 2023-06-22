@@ -37,13 +37,18 @@ else{
                 <div class="leftpass"><b class="font">Password</b></div>
                 <div class="leftcontact"><b class="font">Contact</b></div>
                 <div class="leftemail"><b class="font">Email Address</b></div>
+                <button class="edit"></button>
+                
+                <div class="lockA"></div>
+                <div class="lockB"></div>
+                <div class="lockC"></div>
             </div>
 
             <div id="popcontent" class="hidden">
                 <div class="mescon2"></div>
                 <div class="messagecon"><b class="font">Messages</b></div>
             </div>
-            <button class="message" id="ms" onclick="Popout()"><b class="font">Message</b></button>
+            <button class="message" id="ms" onclick="Back()"><b class="font">Back</b></button>
             <form action="logout.php">
                 <button class="Logout"><b class="font">Logout</b></button>
             </form>
@@ -51,10 +56,8 @@ else{
     </body>
                     <!--Function-->
     <script>
-        function Popout() {
-        var popcontent = document.getElementById("popcontent");
-        popcontent.classList.toggle("hidden");
-        popcontent.classList.toggle("visible");
+        function Back() {
+            window.location.href = "OSIA-Document.php";
         }
     </script>
 </html>
