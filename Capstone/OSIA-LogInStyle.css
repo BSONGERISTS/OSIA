@@ -135,25 +135,25 @@ border-radius: 10px;
 background-blend-mode: lighten;
 }
 .element1 {
-width: 320px;
-height: 98px;
-left: 200px;
-top: 50px;
-background: url(Group\ 2.png) no-repeat;
+background-color: aqua;
+width: 150px;
+height: 150px;
+left: 88%;
+top: 74%;
 }
 .element2 {
-width: 159px;
-height: 77px;
+background-color: aqua;
+width: 150px;
+height: 150px;
 left: 25px;
 top: 50px;
-background: url(Logo.png) no-repeat;
 }
 .element3 {
 width: 159px;
 height: 77px;
 left: 133px;
 top: 50px;
-background: url(Logo.png);
+background: url(Logo.png) no-repeat;
 }
 
 #invalid {
