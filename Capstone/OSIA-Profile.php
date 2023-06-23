@@ -10,6 +10,12 @@ else{
     header("Location: OSIA-LogIn.php");
     exit;
 }
+$edit = false;
+if ($_SERVER["REQUEST_METHOD"] === "POST"){
+    $sql = "UPDATE `users` SET `name` = '{$_POST["name"]}', `dob` = '{$_POST["dob"]}', `contact` = '{$_POST["contact"]}' WHERE `users`.`id` = {$_SESSION["id"]}";
+    $result = $mysqli->query($sql);
+    $edit = true;
+}
 ?>
 
 <html>
@@ -20,30 +26,32 @@ else{
     </head>
     <body>
         <div class="container">
-            
             <div class="logcontainer">
                 <div class="circle"></div>
                 <button class="scircle"></button>
-                <div class="proftext"><b class="font">Profile</b></div>
-                <input class="name" style="font-weight: bold" disabled value= "<?= $username["name"] ?>">
-                <input class="username" style="font-weight: bold" value= <?= $username["user"] ?>>
-                <input class="Birth" style="font-weight: bold" value= <?= $username["dob"] ?>>
-                <input class="pass" style="font-weight: bold" value= <?= $username["password"] ?>>
-                <input class="contact" style="font-weight: bold" value= <?= $username["contact"] ?>>
-                <input class="Email" style="font-weight: bold" value= <?= $username["email"] ?>>
+                <div class="proftext"><b class="font"></b></div>
                 <div class="leftname"><b class="font">Name</b></div>
                 <div class="leftusername"><b class="font">Username</b></div>
                 <div class="leftbirth"><b class="font">Date of Birth</b></div>
                 <div class="leftpass"><b class="font">Password</b></div>
                 <div class="leftcontact"><b class="font">Contact</b></div>
                 <div class="leftemail"><b class="font">Email Address</b></div>
-                <button class="edit"></button>
-                
+                <form method="post">
+                    <input name="name" class="name" style="font-weight: bold" value= "<?= $_POST["name"] ?? $username["name"] ?>">
+                    <input class="username" style="font-weight: bold" value= "<?= $username["user"] ?>" disabled>
+                    <input class="pass" type="password" style="font-weight: bold" value= "<?= $username["password"] ?>" disabled>
+                    <input name="dob" type="date" class="Birth" style="font-weight: bold" value= "<?= $_POST["dob"] ?? $username["dob"] ?>" >
+                    <input name="contact" class="contact" style="font-weight: bold" value= "<?= $_POST["contact"] ?? $username["contact"] ?>">
+                    <input class="Email" style="font-weight: bold" value= "<?= $username["email"] ?>">
+                    <button class="edit"></button>
+                </form>
+                <?php if ($edit): ?>
+                    <b id="update">Your profile updated successfuly</b>
+                <?php endif; ?>
                 <div class="lockA"></div>
                 <div class="lockB"></div>
                 <div class="lockC"></div>
             </div>
-
             <div id="popcontent" class="hidden">
                 <div class="mescon2"></div>
                 <div class="messagecon"><b class="font">Messages</b></div>
