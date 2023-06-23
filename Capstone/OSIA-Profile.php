@@ -28,7 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         <div class="container">
             <div class="logcontainer">
                 <div class="circle"></div>
-                <button class="scircle"></button>
+
+                <button class="scircle" id="ms" onclick="Upload()"></button>
+
                 <div class="proftext"><b class="font"></b></div>
                 <div class="leftname"><b class="font">Name</b></div>
                 <div class="leftusername"><b class="font">Username</b></div>
@@ -52,10 +54,20 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
                 <div class="lockB"></div>
                 <div class="lockC"></div>
             </div>
+
             <div id="popcontent" class="hidden">
-                <div class="mescon2"></div>
-                <div class="messagecon"><b class="font">Messages</b></div>
+                
+                <div class="mescon2">
+                    <button class="button1"><b class="font">Upload a Picture</b></button>
+                </div>
+                <div class="messagecon"><b class="font">Select Profile Picture</b></div>
+                <button class="uplexit" onclick="Upload()"></button>
+                <div class="Upldown">
+                    <button class="cancel"><b class="font">Cancel</b></button>
+                    <button class="save"><b class="font">Save</b></button>
+                </div>
             </div>
+
             <button class="message" id="ms" onclick="Back()"><b class="font">Back</b></button>
             <form action="logout.php">
                 <button class="Logout"><b class="font">Logout</b></button>
@@ -64,6 +76,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     </body>
                     <!--Function-->
     <script>
+        function Upload() {
+                var popcontent = document.getElementById("popcontent");
+                popcontent.classList.toggle("hidden");
+                popcontent.classList.toggle("visible");
+                }
         function Back() {
             window.location.href = "OSIA-Document.php";
         }
