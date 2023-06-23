@@ -25,11 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
   </head>
   <body>
     <div class="container">
-      
     <div class="element element1"></div>
     <div class="element element2"></div>
       <div class="circle">
-
       <div class="element element3"></div>
       <form method="post">
         <div class="username-input">
@@ -45,9 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
         </div>
         <button class="login-button" type="submit"><b>LOGIN</b></button>
       </form>
-
       </div>
-
     </div>
     
                 <!--Function-->
