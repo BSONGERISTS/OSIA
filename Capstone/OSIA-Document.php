@@ -1,4 +1,5 @@
 <?php
+//if logged in
 session_start();
 if(isset($_SESSION["id"])){
     $mysqli = require __DIR__ . "/database.php";
@@ -6,6 +7,7 @@ if(isset($_SESSION["id"])){
     $result = $mysqli->query($sql);
     $username = $result->fetch_assoc();
 }
+//if not logged in
 else{
     header("Location: OSIA-LogIn.php");
     exit;
@@ -19,16 +21,20 @@ else{
         <title>OSIA: Organized System Information Assistant</title>
     </head>
     <body>
+        
         <div class="container">
             <form action="OSIA-Profile.php">
                 <button class="profile">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
                     <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+                    <?php echo '<img  class="profileimg" src="data:image/jpeg;base64,' . base64_encode( $username["profile"] ) . '" />'; ?>
                 </button>
             </form>
             <div class="elem1"></div>
             <button class="message" id="ms" onclick="Popout()"><b class="font">Message</b></button>
-            <div class="preview"></div>
+            <div class="preview">
+                <iframe src="uploads/13.pdf" frameborder="0" height="100%" width="100%"></iframe>
+            </div>
             <div class="documentprev"><b class="font">Document Preview</b></div>
             <button class="delete">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
@@ -58,7 +64,38 @@ else{
                 </button>
             </div>
             
-            <div class="Folders"></div>
+            <!--Files and Folders-->
+            <div class="Folders">
+                <?php
+                //gets the file names
+                    $directory = "uploads/";
+                    if(is_dir($directory)){
+                        $files = opendir($directory);
+                        if($files){
+                            while(($file_name = readdir($files)) !== FALSE){
+                                if($file_name != '.' && $file_name != '..'){
+                                    echo '<button class="files">';
+                                    echo $file_name;
+                                }
+                            }
+                        }
+                    }
+
+                    /* dito muna
+                    $filecount = count(glob($directory . "*"));
+                    for($i = 0; $i < $filecount; $i++){
+                        echo '<button class="files">';
+                        $php_files = glob('uploads/*');
+                    */
+
+                        /* baguhin ang icon
+                        echo '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">';
+                        echo '<path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>';
+                        */
+                    
+                    
+                ?>
+            </div>
             <div class="foldertab"></div>
             <button class="Previous">
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
@@ -72,10 +109,16 @@ else{
                 <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                 <path d="M512 416c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V96C0 60.7 28.7 32 64 32H192c20.1 0 39.1 9.5 51.2 25.6l19.2 25.6c6 8.1 15.5 12.8 25.6 12.8H448c35.3 0 64 28.7 64 64V416zM232 376c0 13.3 10.7 24 24 24s24-10.7 24-24V312h64c13.3 0 24-10.7 24-24s-10.7-24-24-24H280V200c0-13.3-10.7-24-24-24s-24 10.7-24 24v64H168c-13.3 0-24 10.7-24 24s10.7 24 24 24h64v64z"/></svg>
             </button>
-            <button class="tap">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
-                <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg>
-            </button>
+
+            <!--if upload button is clicked-->
+            <form method="post" enctype="multipart/form-data" action="fileupload.php">
+                <div class="tap">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                    <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"/></svg>
+                    <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/msword, application/pdf" onchange="form.submit()" class="invisible">
+                </div>
+            </form>
+            
             <select placeholder="Sort by">
                 <option disabled selected>Sort by</option>
                 <option value="option1">A-Z</option>
