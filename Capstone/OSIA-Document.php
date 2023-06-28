@@ -41,7 +41,13 @@ else{
             <button class="Previous"></button>
             <button class="Next"></button>
             <button class="add"></button>
-            <button class="tap"></button>
+
+            <form method="post" enctype="multipart/form-data" action="fileupload.php">
+                <div class="tap">
+                    <input type="file" name="file" accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/msword, application/pdf" onchange="form.submit()" class="invisible">
+                </div>
+            </form>
+            
             <select placeholder="Sort by">
                 <option disabled selected>Sort by</option>
                 <option value="option1">A-Z</option>
