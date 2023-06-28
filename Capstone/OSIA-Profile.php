@@ -27,10 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST"){
     <body>
         <div class="container">
             <div class="logcontainer">
-                <div class="circle"></div>
-
+                <?php echo '<img  class="circle" src="data:image/jpeg;base64,' . base64_encode( $username["profile"] ) . '" />'; ?>
                 <button class="scircle" id="ms" onclick="Upload()"></button>
-
                 <div class="proftext"><b class="font"></b></div>
                 <div class="leftname"><b class="font">Name</b></div>
                 <div class="leftusername"><b class="font">Username</b></div>
