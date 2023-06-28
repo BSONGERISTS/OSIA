@@ -238,6 +238,14 @@ body {
     font-weight: bold; 
 }
 .circle{
+    padding: 0px 0px;
+    text-align: center;
+    font-size: 206px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    display: inline-block;
     width: 240px;
     height: 240px;
     border-radius: 50%;
@@ -262,9 +270,9 @@ body {
     cursor: pointer;
     border-radius: 5px;
     position: absolute;
-    width: 110px;
+    width: 123px;
     height: 35px;
-    left: 150px;
+    left: 118px;
     top: 330.5px;
 }
 .leftname{
@@ -377,6 +385,8 @@ body {
 }
 .scircle{
     cursor: pointer;
+    padding: 4px 10px;
+    font-size: 17px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
