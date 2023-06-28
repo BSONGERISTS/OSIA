@@ -393,7 +393,7 @@ body {
     color: black;
     border: none;
     padding: 10px 20px;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
@@ -402,60 +402,60 @@ body {
     transition: background-color 0.3s ease;
     position: absolute;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    width: 35px;
+    width: 55px;
     height: 37px;
-    left: 1040px;
+    left: 1025px;
     top: 381px;
 }
 .edit:hover{
     background-color: #87c18b;
 }
 .lockA {
-    background-color: #B8D87B;
+    background-color: white;
     color: black;
     border: none;
     padding: 10px 20px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
     border-radius: 5px;
     position: absolute;
-    width: -4px;
+    width: 9px;
     height: 12px;
-    left: 1039px;
+    left: 1029px;
     top: 115px;
 }
 .lockB {
-    background-color: #B8D87B;
+    background-color: white;
     color: black;
     border: none;
     padding: 10px 20px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
     border-radius: 5px;
     position: absolute;
-    width: -4px;
+    width: 9px;
     height: 12px;
-    left: 1039px;
+    left: 1029px;
     top: 168px;
 }
 .lockC {
-    background-color: #B8D87B;
+    background-color: white;
     color: black;
     border: none;
     padding: 10px 20px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
     border-radius: 5px;
     position: absolute;
-    width: -4px;
+    width: 9px;
     height: 12px;
-    left: 1039px;
+    left: 1029px;
     top: 332px;
 }
 .messagecon{
@@ -491,7 +491,7 @@ body {
     left: 25.95%;
 }
 .uplexit{
-    background-color: #7bd3d8;
+    background-color: #B8D87B;
     position: absolute;
     cursor: pointer;
     border: none;
