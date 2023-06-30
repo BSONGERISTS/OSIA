@@ -135,16 +135,28 @@ border-radius: 10px;
 background-blend-mode: lighten;
 }
 .element1 {
-background-color: aqua;
+background-color: #DBEDB9;
+background: url('DLSLogo.png') no-repeat;
+padding: 0px 0px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 1px;
 width: 150px;
-height: 150px;
+height: 182px;
 left: 88%;
-top: 74%;
+top: 71%;
 }
 .element2 {
-background-color: aqua;
-width: 150px;
-height: 150px;
+background-color: #DBEDB9;
+background: url('IQUAO.png') no-repeat;
+padding: 0px 0px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 1px;
+width: 222px;
+height: 215px;
 left: 25px;
 top: 50px;
 }
