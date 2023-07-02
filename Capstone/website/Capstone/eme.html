@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sort By Dropdown Example</title>
+</head>
+<body>
+  <label for="sort-by">Sort By:</label>
+  <select id="sort-by" name="sort-by">
+    <option value="name">Name</option>
+    <option value="date">Date</option>
+    <option value="price">Price</option>
+    <option value="rating">Rating</option>
+  </select>
+  
+  <button onclick="sortItems()">Sort</button>
+  
+  <ul id="items-list">
+    <!-- List of items to be sorted -->
+    <li>Nigga</li>
+    <li>Poly</li>
+    <li>White</li>
+    <!-- Add more list items here -->
+  </ul>
+  
+  <script>
+    function sortItems() {
+      var select = document.getElementById("sort-by");
+      var selectedOption = select.value;
+      
+      var itemList = document.getElementById("items-list");
+      var items = Array.from(itemList.children);
+      
+      items.sort(function(a, b) {
+        if (selectedOption === "name") {
+          return a.textContent.localeCompare(b.textContent);
+        } else if (selectedOption === "date") {
+          // Implement custom sorting logic for date
+        } else if (selectedOption === "price") {
+          // Implement custom sorting logic for price
+        } else if (selectedOption === "rating") {
+          // Implement custom sorting logic for rating
+        }
+      });
+      
+      for (var i = 0; i < items.length; i++) {
+        itemList.appendChild(items[i]);
+      }
+    }
+  </script>
+</body>
+</html>
