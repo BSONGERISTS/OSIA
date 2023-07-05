@@ -1,0 +1,293 @@
+body {
+background-color: #DBEDB9;
+}
+@font-face {
+    font-family: myfont;
+    src: url(Com.ttf);
+}
+.scontainer {
+    width: 425px;
+    height: 487px;
+    background-color: #abb990;
+    position: absolute;
+    border-radius: 8px;
+    top: 54.2%;
+    left: 80.6%;
+    transform: translate(-50%, -50%);
+    }
+.container {
+width: 425px;
+height: 487px;
+background-color: #23654A;
+position: absolute;
+border-radius: 8px;
+top: 53%;
+left: 80%;
+transform: translate(-50%, -50%);
+}
+.login-button {
+background-color: white;
+color: black;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-family: myfont;
+font-size: 15px;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+position: absolute;
+width: 309px;
+height: 45px;
+left: 59px;
+top: 366px;
+}
+.login-button:hover {
+background-color: #bfbdbd;
+}
+.password-input {
+user-select: none;
+background-color: #88a49c;
+position: absolute;
+width: 310px;
+height: 63px;
+left: 50%;
+top: 248px;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: translateX(-50%);
+border-radius: 10px;
+border: 8px;
+}
+.password-input img {
+    display: block;
+    margin-right: 250px;
+}
+.password-input input {
+outline: none;
+background-repeat: no-repeat;
+background-color: #88a49c;
+font-family: myfont;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-align: left;
+color: rgba(255, 255, 255, 0.829);
+border-radius: 10px;
+border: 8px;
+font-size: 15px;
+position: absolute;
+width: 200px;
+height: 50px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+.password-input input::placeholder {
+color: white;
+}
+.show-password-button {
+background-repeat: no-repeat;
+background-color: #88a49c;
+color: black;
+border: none;
+padding: 0px 8px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 15px;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease;
+position: absolute;
+width: 40px;
+height: 40px;
+left: calc(50% + 103px);
+top: 12px;
+}
+.username-input {
+user-select: none;
+background-color: #88a49c;
+position: absolute;
+width: 310px;
+height: 63px;
+left: 50%;
+top: 152px;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: translateX(-50%);
+border-radius: 10px;
+border: 8px;
+}
+.username-input img {
+    display: block;
+    margin-right: 250px;
+}
+.username-input input {
+outline: none;
+background-repeat: no-repeat;
+background-color: #88a49c;
+font-family: myfont;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-align: left;
+color: rgba(255, 255, 255, 0.829);
+border-radius: 10px;
+border: 8px;
+font-size: 15px;
+position: absolute;
+width: 200px;
+height: 50px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+}
+.username-input input::placeholder {
+color: #ffffff;
+}
+#invalid {
+    color: red;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: myfont;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    width: 400px;
+    height: 45px;
+    left: -86px;
+    top: 65px;
+}
+.logtext{
+    user-select: none;
+    color: white;
+    font-family: myfont;
+    font-size: 34px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 0px;
+    left: 207px;
+    top: 84px;
+}
+.element1{
+    user-select: none;
+    font-family: myfont;
+    font-size: 34px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 0px;
+    left: 93%;
+    top: 9%;
+}
+.element2{
+    user-select: none;
+    font-family: myfont;
+    font-size: 34px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 0px;
+    left: 4%;
+    top: 10%;
+}
+.element3{
+    user-select: none;
+    font-family: myfont;
+    font-size: 34px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 0px;
+    left: 10%;
+    top: 10%;
+}
+.element4{
+    background-color: #DBEDB9;
+    user-select: none;
+    font-family: myfont;
+    font-size: 34px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 0px;
+    left: 18%;
+    top: 10%;
+}
+.httptext{
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 350px;
+    left: 4%;
+    top: 94%;
+}
+.aboutus{
+    user-select: none;
+    cursor: pointer;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 68px;
+    left: 89%;
+    top: 94%;
+}
+.Bigtext{
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 51px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 563px;
+    left: 13%;
+    top: 40%;
+}
+.Avtext{
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 21px;
+    position: absolute;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    height: 0px;
+    width: 563px;
+    left: 13%;
+    top: 52%;
+}
