@@ -1,0 +1,297 @@
+body {
+    user-select: none;
+    background-color: #DBEDB9;
+}
+@font-face {
+    font-family: myfont;
+    src: url(Com.ttf);
+}
+.ToLogin{
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-family: myfont;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 175px;
+    height: 45px;
+    left: 73.7%;
+    top: 5.4%;
+}
+.ToLogin:hover{
+    background-color: #bfbdbd;
+}
+
+.element1{
+    user-select: none;
+    font-family: myfont;
+    font-size: 34px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 0px;
+    left: 93%;
+    top: 9%;
+}
+.email{
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 350px;
+    left: 75%;
+    top: 94%;
+}
+.Bigtext{
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 51px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 563px;
+    left: -5%;
+    top: 7%;
+}
+.Avtext{
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 563px;
+    left: 5%;
+    top: 14%;
+}
+.Team1{
+    user-select: none;
+    background-color: white;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    width: 273px;
+    left: 1%;
+    top: 33%;
+}
+.Team2{
+    user-select: none;
+    background-color: white;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    width: 273px;
+    left: 21%;
+    top: 42%;
+}
+.Team3{
+    user-select: none;
+    background-color: white;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    width: 273px;
+    left: 41%;
+    top: 33%;
+}
+.Team4{
+    user-select: none;
+    background-color: white;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    width: 273px;
+    left: 61%;
+    top: 43%;
+}
+.Team5{
+    user-select: none;
+    background-color: white;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+    width: 273px;
+    left: 81%;
+    top: 33%;
+}
+.display1{
+user-select: none;
+    font-family: myfont;
+    font-size: 34px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 0px;
+    left: 55%;
+    top: 28.8%;
+}
+.display2{
+    user-select: none;
+        font-family: myfont;
+        font-size: 34px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 0px;
+        width: 0px;
+        left: 54%;
+        top: 27.2%;
+}
+.display3{
+    user-select: none;
+        font-family: myfont;
+        font-size: 34px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 0px;
+        width: 0px;
+        left: 54%;
+        top: 27.2%;
+}
+.display4{
+    user-select: none;
+        font-family: myfont;
+        font-size: 34px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 0px;
+        width: 0px;
+        left: 54%;
+        top: 27.2%;
+}
+.display5{
+    user-select: none;
+        font-family: myfont;
+        font-size: 34px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 0px;
+        width: 0px;
+        left: 54%;
+        top: 27.2%;
+}
+.Text1{
+    background-color: white;
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 145px;
+    left: 5%;
+    top: 80%; 
+}
+.Text2{
+    background-color: white;
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 145px;
+    left: 26%;
+    top: 89%; 
+}
+.Text3{
+    background-color: white;
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 145px;
+    left: 45%;
+    top: 80%; 
+}
+.Text4{
+    background-color: white;
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 145px;
+    left: 65%;
+    top: 89%; 
+}
+.Text5{
+    background-color: white;
+    user-select: none;
+    color: black;
+    font-family: myfont;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 145px;
+    left: 86%;
+    top: 80%; 
+}
