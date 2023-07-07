@@ -528,6 +528,46 @@ select{
     left: 338px;
     top: 1px;
 }
+.addfoldertab{
+    background-color: #B8D87B;
+    color: black;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 30%;
+}
+.foldermessage{
+    background-color: #FFFF;
+    color: black;
+    border: none;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    position: absolute;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: 10%;
+    margin-left:35%;
+}
+.elem1 {
+position: absolute;
+border-radius: 10px;
+background-blend-mode: lighten;
+width: 320px;
+height: 98px;
+left: 100px;
+top: -2px;
+background: url(Group\ 2.png);
+}
+
 .files{
     user-select: none;
     background-repeat: no-repeat;
@@ -591,6 +631,19 @@ select{
     top: 6.8%;
 }
 .profname{
+    user-select: none;
+    font-family: myfont;
+    font-size: 19px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0px;
+    width: 0px;
+    left: 42%;
+    top: 36.8%;
+}
+.submit_file{
     user-select: none;
     font-family: myfont;
     font-size: 19px;
